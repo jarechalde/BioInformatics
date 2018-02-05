@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage[colorlinks]{hyperref}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{linkcolor=DarkRed}
+\hypersetup{urlcolor=Blue}
+
+\usepackage{cleveref}
+
+\setlength{\parindent}{1em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.0}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	{\scshape\LARGE Assignment 1\par}
+	\vspace{1cm}
+	{\scshape\Large Bioinformatics (CIS 455)\par}
+	\vspace{1.5cm}
+	{\Large\itshape Javier Arechalde\par}
+	\vfill
+	{\large \today\par}
+\end{titlepage}
+
+\section*{Problem 1-1 Jones \& Pevzner, Problem 2.1}
+  
+\subsection*{1.}
+
+We are going to write the pseudocode for an algorithm, that given a list of $n$ numbers, returns the largest and smallest number in that list.
+
+\begin{algorithm}
+\caption{Finding largest and smallest numbers}
+\begin{algorithmic}[1]
+\State Initialize $max$ to $L[0]$ and $min$ to $L[0]$
+\For {$n$ in number list L}
+ \If{$n<min$}
+  \State $min = n$
+ \EndIf 
+ \If{$n>max$}
+  \State $max = n$
+ \EndIf
+\EndFor
+\State Return $max$ and $min$
+\end{algorithmic}
+\end{algorithm}
+
+The time complexity of my algorithm will be $O(n) = n$, and the running time will be $2(n-1)+2$ because for every number in the list that starts from the second position after initialization, we need to check if the number is greater than the current maximum, or smaller than the current minimim.
+
+Now we will implement an algorithm that performs only $3n/2$ comparisons to find the smallest and largest numbers in the list. For this implementation we will use the tournament method.
+
+
+
+
+
+\begin{algorithm}
+\caption{My implementation}
+\begin{algorithmic}[1]
+\While {$S_{assign}<N_{pos}$ \& $S_{check}<n$ \& student $s$ hasnt proposed to all $h_i \in s_{pref}$}
+ \State Try to assign to that student a hospital in his preference list
+ \If {$n_{assign} (h_i) < n_{avail} (h_i)$}
+  \State Student $s$ is assigned to hospital $h_i$
+  \ElsIf {$n_{assign} (h_i) \geq n_{avail} (h_i)$}
+   \State Check $h_{pref} (h_i)$
+   \If {student $s$ is higher in the list than any student $s_i \in S$}
+   \State Least prefered student $s'$ in $h$ is now free, and will try to be reassigned
+   \State Student $s$ is now assigned to hospital $h_i$
+   \ElsIf {Student $s$ is not higher in $h_{pref}$ than any $s_i \in h_{pref} (h_i)$}
+   \State Student $s$ remains free
+  \EndIf
+ \EndIf
+\EndWhile
+\State Return the set of hospitals and assigned students to each hospital.  
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}
