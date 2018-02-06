@@ -2,99 +2,56 @@
 
 arr = [1,3,4,76,43,2,4,7,8]
 
-maxmin = {'Max': None, 'Min': None}
-maxminT = {'Max': None, 'Min': None}
+maxmin = [None,None]
+maxminl = [None,None]
+maxminr = [None,None]
 
-
-maxminL1 = {'Max': None, 'Min': None}
-maxminL2 = {'Max': None, 'Min': None}
-
-maxminl = {'Max': None, 'Min': None}
-
-
-
-def findmaxmin(arr,arr0,arr1,maxminL1,maxminL2):
- 
- print('DOWN')
- print(arr0,arr1)
-
- try:
-  print('Hola>')
-  #print(maxminL1,maxminL2)
-  print('Hola>')
- except:
-  pass
+def findmaxmin(arr,arr0,arr1):
 
  #If the array has only one element, its the maximum and minimum at the same time
  if arr0 == arr1:
-  print('Length == 1')
-  maxmin['Max'] = arr[arr0]
-  maxmin['Min'] = arr[arr0]
-  print('Array length 1: ', maxmin)
-  print('UP')
-  return maxmin
+  maxmin[1] = arr[arr0]
+  maxmin[0] = arr[arr0]
+  return maxmin[1],maxmin[0]
  
  #If the array has two elements
  if arr1 == (arr0 + 1):
-  print('Length == 2')
-  
   if arr[arr0]>arr[arr1]:
-   print('We here')
-   maxmin['Max']= arr[arr0]
-   maxmin['Min'] = arr[arr1]
+   maxmin[1]= arr[arr0]
+   maxmin[0] = arr[arr1]
 
   else:
-   print('Or here')
-   maxmin['Max'] = arr[arr1]
-   maxmin['Min'] = arr[arr0]
-   
-  print('Array length 2: ', maxmin)
-  print('UP')
-  return maxmin
+   maxmin[1] = arr[arr1]
+   maxmin[0] = arr[arr0]
+  return maxmin[1],maxmin[0]
 
  #If there are more than two elements, we should keep dividing the array recursively
 
  #Now we divide the list in two
- print('Dividing Array')
  arrmid = (arr0+arr1)/2
- arr0 = int(arr0)
- arr1 = int(arr1)
-
- print('Arr0: %i Arr1: %i' %(arr0,arr1))
-
- print('Left half')
- maxminL1 = findmaxmin(arr,arr0,arrmid,maxminL1,maxminL2)
- print(maxminL1)
- maxminl['Max'] = maxminL1['Max']
- maxminl['Min'] = maxminL1['Min']
  
- print('Saved L1', maxmin)
- print('Right half')
- maxminL2 = findmaxmin(arr,arrmid+1,arr1,maxminL1,maxminL2)
-
- print('Relative max and min: ')
- print(maxminl)
- print(maxminL2)
- print('\n\n')
-
+ maxminl[1],maxminl[0] = findmaxmin(arr,arr0,arrmid)
+ maxminr[1],maxminr[0] = findmaxmin(arr,arrmid+1,arr1)
  #Now we compare both maximum and minimum found
-
- #Maximum
- if maxminL1['Max']>maxminL2['Max']:
-  maxminT['Max'] = maxminL1['Max']
- else:
-  maxminT['Max'] = maxminL2['Max']
-
+ print(maxminl,maxminr)
+ 
  #Minimum
- if maxminL1['Min']<maxminL2['Min']:
-  maxminT['Min'] = maxminL1['Min']
+ if maxminl[0]<maxminr[0]:
+  maxmin[0] = maxminl[0]
  else:
-  maxminT['Min'] = maxminL2['Min']
+  maxmin[0] = maxminr[0]
+  
+ #Maximum
+ if maxminl[1]>maxminr[1]:
+  maxmin[1] = maxminl[1]
+ else:
+  maxmin[1] = maxminr[1]
 
- print('Relative max: %i Relative min: %i' %(maxminT['Max'],maxminT['Min']))
+ print('Relative max: %i Relative min: %i' %(maxmin[1],maxmin[0]))
+
+ return maxmin[1],maxmin[0]
 
 #Calling the function
-print('Calling the function')
-findmaxmin(arr, 0, len(arr)-1,maxminL1,maxminL2)
-print('Maximum found: %i' %maxminT['Max'])
-print('Minimum found: %i' %maxminT['Min'])
+maxmin = findmaxmin(arr, 0, len(arr)-1)
+print('Maximum found: %i' %maxmin[1])
+print('Minimum found: %i' %maxmin[0])
