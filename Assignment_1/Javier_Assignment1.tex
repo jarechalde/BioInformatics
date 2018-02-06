@@ -57,7 +57,40 @@ We are going to write the pseudocode for an algorithm, that given a list of $n$ 
 
 The time complexity of my algorithm will be $O(n) = n$, and the running time will be $2(n-1)+2$ because for every number in the list that starts from the second position after initialization, we need to check if the number is greater than the current maximum, or smaller than the current minimim.
 
-Now we will implement an algorithm that performs only $3n/2$ comparisons to find the smallest and largest numbers in the list. For this implementation we will use the tournament method.
+\subsection*{2.}
+
+Now we will implement an algorithm that performs only $3n/2$ comparisons to find the smallest and largest numbers in the list. For this implementation we will use the tournament method described below (Divide \& Conquer).
+
+\begin{algorithm}[H]
+\caption{Divide \& Conquer pseudocode}
+\begin{algorithmic}[1]
+\State We have a list $l$ with $n$ integers $l = (l_1,l_2,...l_n)$
+\Function{findmaxmin}{list,alow,ahigh}
+ \If{$length list = 1$}
+  \State Maximum and minimum are the same
+
+  \Return maximum and minimum
+ \EndIf
+ \If{$length list = 2$}
+  \State Compare both elements in the list to find the maximum and minimum
+
+  \Return maximum and minimum
+ \EndIf
+ \State Divide the array in half, and store the two halves in arrL and arrR
+ \State Call findmaxmin to find the maximum and minimum of arrL and arrR
+ \If{Maximum of arrL or arrR is greater than the current max}
+  \State Update global maximum
+ \EndIf
+ \If{Minimum of arrL or arrR is smaller than the current min}
+  \State Update global minimum
+ \EndIf
+ \Return the global maximum and the global minimum
+\EndFunction
+\State In the end, we have the maximum and minimum of the given list of integers.
+\end{algorithmic}
+\end{algorithm}
+
+In this case, we will divide the initial list with $n$ numbers into two lists of $n/2$ each, for eacg of this lists, we will need to find the maximum and minimum of this lists, which can be done in $n/2-1$ comparisons. So in total we will need $3n/2-2$ comparisons to find the maximum and minimum of a list containing $n$ numbers.
 
 \section*{Problem 1-2 Jones \& Pevzner, Problem 2.2}
 
@@ -88,7 +121,7 @@ Now we will write the pseudocode for two algorithms that iterate over every inde
 \For{Element $l_i$ in list $l$ and element $n_i$ in list $n$}
  \State $sum = sum + \log_{l_i} n_i$
 \EndFor
-\Return The $sum$ value
+\State Return the $sum$ value
 \end{algorithmic}
 \end{algorithm}
 

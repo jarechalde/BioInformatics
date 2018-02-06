@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  5 FEB 2018 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  6 FEB 2018 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,50 +684,46 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 
+l.92 
       [1]pdfTeX warning (ext4): destination with the same identifier (name{ALG@
 line.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \State
-            We have two indexes lists $l = (0,0,...0)$ and $n = (n_1,n_2,......
+l.104 \State
+             We have two indexes lists $l = (0,0,...0)$ and $n = (n_1,n_2,.....
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 \State
-            We will calculate the sum of the logarithm with the base of the ...
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
-has been already used, duplicate ignored
+l.105 \State
+             We will print all the possible combination of elementspdfTeX warni
+ng (ext4): destination with the same identifier (name{ALG@line.3}) has been alr
+eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 \State
-            We initialize: $sum = 0$pdfTeX warning (ext4): destination with the
- same identifier (name{ALG@line.4}) has been already used, duplicate ignored
+l.106 \For
+          {Element $l_i$ in list $l$}pdfTeX warning (ext4): destination with th
+e same identifier (name{ALG@line.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \For
-         {Element $l_i$ in list $l$ and element $n_i$ in list $n$}pdfTeX warnin
-g (ext4): destination with the same identifier (name{ALG@line.5}) has been alre
-ady used, duplicate ignored
+l.107  \For
+           {Element $n_i$ in list $n$}pdfTeX warning (ext4): destination with t
+he same identifier (name{ALG@line.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.89  \State
-             $sum = sum + \log_{l_i} n_i$pdfTeX warning (ext4): destination wit
-h the same identifier (name{ALG@line.6}) has been already used, duplicate ignor
-ed
+l.108   \State
+               Print $l_i,n_i$.pdfTeX warning (ext4): destination with the same
+ identifier (name{ALG@line.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 \EndFor
-            
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 99.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
- [2pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1
-}) has been already used, duplicate ignored
+l.109  \EndFor
+              pdfTeX warning (ext4): destination with the same identifier (name
+{ALG@line.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 \EndFor
+              [2pdfTeX warning (ext4): destination with the same identifier (na
+me{ALG@line.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -768,56 +764,122 @@ e.7}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.113 
+      pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
+e.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.113 
+      pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
+e.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.113 
+      pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
+e.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.113 
       ]pdfTeX warning (ext4): destination with the same identifier (name{ALG@li
 ne.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 \State
+l.118 \State
+             We have two indexes lists $l = (0,0,...0)$ and $n = (n_1,n_2,.....
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.119 \State
+             We will calculate the sum of the logarithm with the base of the...
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.120 \State
+             We initialize: $sum = 0$pdfTeX warning (ext4): destination with th
+e same identifier (name{ALG@line.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 \For
+          {Element $l_i$ in list $l$ and element $n_i$ in list $n$}pdfTeX warni
+ng (ext4): destination with the same identifier (name{ALG@line.5}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.122  \State
+              $sum = sum + \log_{l_i} n_i$pdfTeX warning (ext4): destination wi
+th the same identifier (name{ALG@line.6}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.123 \EndFor
+             pdfTeX warning (ext4): destination with the same identifier (name{
+ALG@line.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 \State
+             Return the $sum$ value
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 132.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
+ [3]pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154 \State
              At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteriapdf
 TeX warning (ext4): destination with the same identifier (name{ALG@line.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 \State
+l.155 \State
              At each step, the number of viruses double, and the bacteria do...
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \While
-             {n>0}pdfTeX warning (ext4): destination with the same identifier (
-name{ALG@line.4}) has been already used, duplicate ignored
+l.156 \While
+             {$n_b>n_b$}pdfTeX warning (ext4): destination with the same identi
+fier (name{ALG@line.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124  \State
+l.157  \State
               $n_b = 2*(n_b-n_v)$pdfTeX warning (ext4): destination with the sa
 me identifier (name{ALG@line.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125  \State
+l.158  \State
               $n_v = 2*n_v$pdfTeX warning (ext4): destination with the same ide
 ntifier (name{ALG@line.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 \EndWhile
+l.159 \EndWhile
                
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./Javier_Assignment1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `Javier_Assignment1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17939 strings out of 493029
- 320626 string characters out of 6136235
- 411067 words of memory out of 5000000
- 21313 multiletter control sequences out of 15000+600000
+ 17955 strings out of 493029
+ 320822 string characters out of 6136235
+ 413067 words of memory out of 5000000
+ 21318 multiletter control sequences out of 15000+600000
  7161 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,42p,10440b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,6n,42p,10440b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -830,10 +892,10 @@ s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on Javier_Assignment1.pdf (4 pages, 132011 bytes).
+Output written on Javier_Assignment1.pdf (5 pages, 137273 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 38 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
