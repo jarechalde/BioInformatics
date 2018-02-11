@@ -113,6 +113,7 @@ Now we will write the pseudocode for two algorithms that iterate over every inde
 \end{algorithm}
 
 \subsection*{Recursive pseudocode:}
+
 \begin{algorithm}[H]
 \caption{Recursive pseudocode}
 \begin{algorithmic}[1]
@@ -153,11 +154,11 @@ Now we will write the pseudocode for two algorithms that iterate over every inde
 \section*{Problem 1-4 Jones \& Pevzner, Problem 2.17}
 
 \subsection*{Will the viruses eventually kill all the bacteria?}
-In order to find if the viruses end up killing all the bacteria in the Petri dish, we only need to prove if the growth of the viruses is higher than the growth of the bacteria.
+In order to find if the viruses end up killing all the bacteria in the Petri dish, we only need to prove that the growth rate of the viruses is higher than the growth rate of the bacteria.
 
 In the first minute, the virus kills one bacteria, and produces another copy of himself, and all the remaining bacteria reproduce, making $2$ viruses and $2(n-1)$ bacteria.
 
-Then the viruses number will continue to double each step, and the number of bacteria will be the number of initial bacteria minus the bacteria that is killed by every virus at each step, and then doubled. The key here is that the virus continue to double at each step, and even though the number of bacteria doubles at each step too, this number is reduced by the number of viruses, before doubling, so we can say that the rate of growth of the viruses is higher than the bacteria growth rate, and at some point they will be exterminated by the viruses.
+The number of viruses continue to double at each step, also, the number of bacteria double at each step too, but before the bacteria double, the viruses kill as many bacteria as the number of viruses there are at that moment. Then, the growth rate of bacteria is slower than the growth rate of the viruses, because is slowed by the number of viruses at each step. Thus, at some point, the bacteria will be exterminated by the viruses.
 
 \subsection*{Algorithm design}
 
@@ -166,16 +167,22 @@ Then the viruses number will continue to double each step, and the number of bac
 \begin{algorithmic}[1]
 \State At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteria
 \State At each step, the number of viruses double, the bacteria double too, but $n_v$ are killed by the virus too before they double.
-\While {$n_b>n_b$}
+\While {$n_b>n_v$}
  \State $n_b = 2*(n_b-n_v)$
  \State $n_v = 2*n_v$
+ \State $steps++$
 \EndWhile
 \end{algorithmic}
 \end{algorithm}
 
 \section*{Problem 1-5}
 
-Add image here.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .4]{Dinosaur}
+\end{center}
+\caption{DNA Sequence}
+\end{figure}
 
 \subsection*{5.A}
 The highest total score is $3599$ with a max score of $435$.
