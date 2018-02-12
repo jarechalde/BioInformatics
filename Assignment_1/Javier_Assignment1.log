@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  11 FEB 2018 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  12 FEB 2018 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -794,303 +794,118 @@ l.120
 ne.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 \State
-             In this problem, the array position will be given by $i$pdfTeX war
-ning (ext4): destination with the same identifier (name{ALG@line.2}) has been a
-lready used, duplicate ignored
+l.128 \Function
+               {Recursive}{node}pdfTeX warning (ext4): destination with the sam
+e identifier (name{ALG@line.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.127 \Function
-               {Recursive}{i}pdfTeX warning (ext4): destination with the same i
-dentifier (name{ALG@line.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128  \If
+l.129  \If
           {We still didn't reach position $d$}pdfTeX warning (ext4): destinatio
-n with the same identifier (name{ALG@line.4}) has been already used, duplicate 
+n with the same identifier (name{ALG@line.3}) has been already used, duplicate 
 ignored
 <to be read again> 
                    \relax 
-l.130  \EndIf
-             
-! Undefined control sequence.
-<recently read> \ElseIf 
-                        
-l.131  \ElseIf
-              {We reached position $d$}
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
-has been already used, duplicate ignored
+l.130   \For
+            {$i$ in range $0 \to n_i$}pdfTeX warning (ext4): destination with t
+he same identifier (name{ALG@line.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.132   \For
-            {i in range 0 to n_d}
-! Missing $ inserted.
-<inserted text> 
-                $
-l.132   \For{i in range 0 to n_d}
-                                 
-? 
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133    \State
-                Print all the possible numbers in that range
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133    \State
-                Print all the possible numbers in that range
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133    \State
-                Print all the possible numbers in that range
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.133    \State
-                Print all the possible numbers in that range
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134   \EndFor
-               
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.134   \EndFor
-               
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.134   \EndFor
-               
-? 
-
-Overfull \hbox (16.50102pt too wide) in paragraph at lines 132--134
-[] \OT1/cmr/bx/n/10 for \OT1/cmr/m/n/10 i in range 0 to n$[] [] \OML/cmm/m/it/1
-0 Printallthepossiblenumbersinthatrange[][]$ 
- []
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.134   \EndFor
-               
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.134   \EndFor
+l.133   \EndFor
                pdfTeX warning (ext4): destination with the same identifier (nam
-e{ALG@line.8}) has been already used, duplicate ignored
+e{ALG@line.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135   \State
-               Return one level higher, and increase the array in that position
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
-has been already used, duplicate ignored
+l.134  \EndIf
+             pdfTeX warning (ext4): destination with the same identifier (name{
+ALG@line.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.136   \State
-               If we reached the limit in that position go up in the array u...
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.137   \State
-               a position to increase. If we cant increase any, that means w...
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.11})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.138  \EndIf
-             
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@b@2@EndIf@0 
-l.138  \EndIf
-             
-? 
-! Undefined control sequence.
-l.139 \EndFucntion
+l.135 \EndFunction
                   
-? 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
 
-! Package algorithmicx Error: Some blocks are not closed!!!.
-
-See the algorithmicx package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 \end{algorithmic}
-                       
-? 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
- [3]
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.169 \State
-             At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteria
-? 
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.169 \State
-             At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteria
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
-has been already used, duplicate ignored
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+
+[3]pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169 \State
-             At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteria
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.170 \State
-             At each step, the number of viruses double, the bacteria double...
-
-? 
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.170 \State
-             At each step, the number of viruses double, the bacteria double...
-
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
-has been already used, duplicate ignored
+l.165 \State
+             At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteriapdf
+TeX warning (ext4): destination with the same identifier (name{ALG@line.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 \State
+l.166 \State
              At each step, the number of viruses double, the bacteria double...
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.171 \While
-             {$n_b>n_v$}
-? 
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.171 \While
-             {$n_b>n_v$}
-? 
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \While
+l.167 \While
              {$n_b>n_v$}pdfTeX warning (ext4): destination with the same identi
 fier (name{ALG@line.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172  \State
+l.168  \State
               $n_b = 2*(n_b-n_v)$pdfTeX warning (ext4): destination with the sa
 me identifier (name{ALG@line.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.173  \State
+l.169  \State
               $n_v = 2*n_v$pdfTeX warning (ext4): destination with the same ide
 ntifier (name{ALG@line.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.174  \State
+l.170  \State
               $steps++$pdfTeX warning (ext4): destination with the same identif
 ier (name{ALG@line.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.175 \EndWhile
-               
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.176 \end{algorithmic}
-                       
-? 
-! Missing = inserted for \ifnum.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.176 \end{algorithmic}
-                       
-? 
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.176 \end{algorithmic}
-                       
-? 
-<output.png, id=60, 724.7075pt x 52.195pt>
+l.171 \EndWhile
+                <output.png, id=60, 724.7075pt x 52.195pt>
 File: output.png Graphic file (type png)
  <use output.png>
-Package pdftex.def Info: output.png used on input line 185.
+Package pdftex.def Info: output.png used on input line 181.
 (pdftex.def)             Requested size: 434.82785pt x 31.31723pt.
 
-Overfull \hbox (89.82785pt too wide) in paragraph at lines 185--186
+Overfull \hbox (89.82785pt too wide) in paragraph at lines 181--182
  [] 
  []
 
 [4 <./output.png>] <Virus.jpeg, id=71, 803.0pt x 602.25pt>
 File: Virus.jpeg Graphic file (type jpg)
  <use Virus.jpeg>
-Package pdftex.def Info: Virus.jpeg used on input line 194.
+Package pdftex.def Info: Virus.jpeg used on input line 190.
 (pdftex.def)             Requested size: 321.1943pt x 240.89572pt.
 
 <Dinosaur.png, id=72, 671.50874pt x 703.62875pt>
 File: Dinosaur.png Graphic file (type png)
  <use Dinosaur.png>
-Package pdftex.def Info: Dinosaur.png used on input line 203.
+Package pdftex.def Info: Dinosaur.png used on input line 199.
 (pdftex.def)             Requested size: 268.59874pt x 281.4465pt.
  [5 <./Virus.jpeg>] [6 <./Dinosaur.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./Javier_Assignment1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `Javier_Assignment1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18032 strings out of 493029
- 321772 string characters out of 6136235
+ 18023 strings out of 493029
+ 321669 string characters out of 6136235
  413067 words of memory out of 5000000
- 21365 multiletter control sequences out of 15000+600000
- 10939 words of font info for 39 fonts, out of 8000000 for 9000
+ 21358 multiletter control sequences out of 15000+600000
+ 10320 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,42p,10440b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,42p,10440b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1103,7 +918,7 @@ c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Javier_Assignment1.pdf (8 pages, 244881 bytes).
+Output written on Javier_Assignment1.pdf (8 pages, 244106 bytes).
 PDF statistics:
  153 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams

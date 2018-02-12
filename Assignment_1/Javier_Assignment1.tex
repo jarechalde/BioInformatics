@@ -120,23 +120,19 @@ For the iterative pseudocode, we would have to implement $d$ nested for loops to
 
 \subsection*{Recursive pseudocode:}
 
+In this case, we will model our problem as a tree, so in order to explore all the possible combinations, we will have to visit all the leafs in the tree. Our recursive algorithm will go one level lower if there are still nodes to visit, and once we visit all the leaves in downstream that node, we will go one level higher and visit all the children nodes of this next node.
+
 \begin{algorithm}[H]
 \caption{Recursive pseudocode}
 \begin{algorithmic}[1]
-\State In this problem, the array position will be given by $i$
-\Function{Recursive}{i}
+\Function{Recursive}{node}
  \If{We still didn't reach position $d$}
-  \Call{Recursive}{i+1}
- \EndIf
- \ElseIf{We reached position $d$}
-  \For{i in range 0 to n_d}
-   \State Print all the possible numbers in that range
+  \For{$i$ in range $0 \to n_i$}
+
+   \Call{Recursive}{next node downstream}
   \EndFor
-  \State Return one level higher, and increase the array in that position
-  \State If we reached the limit in that position go up in the array until we can find
-  \State a position to increase. If we cant increase any, that means we are done.
  \EndIf
-\EndFucntion
+\EndFunction
 \end{algorithmic}
 \end{algorithm}
 
