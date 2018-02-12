@@ -101,13 +101,19 @@ Now we will write the pseudocode for two algorithms that iterate over every inde
 \algnewcommand\algorithmicforeach{\textbf{for each}}
 \algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
 
+For the iterative pseudocode, we would have to implement $d$ nested for loops to print all the possible combinations of indexes.
+
 \begin{algorithm}[H]
 \caption{Iterative pseudocode}
 \begin{algorithmic}[1]
-\State We have two indexes lists $l = (0,0,...0)$ and $n = (n_1,n_2,...n_d)$.
-\State We will print all the possible combination of elements
-\ForEach{$(i_1,i_2,..,i_d)$ \textbf{from} $(0,0,...,0)$ \textbf{to} $(n_1,n_2,...,n_d)$}
-  \State Return list $i$.
+\For{$i$ in range $0 \to n_1$}
+ \For{$j$ in range $0 \to n_2$}
+  \State ...
+  \For{$k$ in range $0 \to n_d$}
+   \State Print the results
+  \EndFor
+  \State ...
+ \EndFor
 \EndFor
 \end{algorithmic}
 \end{algorithm}
@@ -117,25 +123,20 @@ Now we will write the pseudocode for two algorithms that iterate over every inde
 \begin{algorithm}[H]
 \caption{Recursive pseudocode}
 \begin{algorithmic}[1]
-\State We have two indexes lists $l = (0,0,...0)$ and $n = (n_1,n_2,...n_d)$.
-\State We will recursively build a tree to print all the possible combinations
-\Function{Combinations}{n,lev,index}
-\While{lev<d}
- \State Add n_index to list $list$
- \If{level=0}
-  \State Return array of 0's
+\State In this problem, the array position will be given by $i$
+\Function{Recursive}{i}
+ \If{We still didn't reach position $d$}
+  \Call{Recursive}{i+1}
  \EndIf
- \If{index = d}
-  \State Reset index
+ \ElseIf{We reached position $d$}
+  \For{i in range 0 to n_d}
+   \State Print all the possible numbers in that range
+  \EndFor
+  \State Return one level higher, and increase the array in that position
+  \State If we reached the limit in that position go up in the array until we can find
+  \State a position to increase. If we cant increase any, that means we are done.
  \EndIf
- \If{We reach the lenght of l and used all d}
-  \State Go down one level and reset index
- \EndIf
-\For{$n_i$ in $n$}
-\State Return ()
-\Call{Combinations}{n,lev,i}
-\EndFunction
-\State Return the $sum$ value
+\EndFucntion
 \end{algorithmic}
 \end{algorithm}
 
@@ -175,6 +176,26 @@ The number of viruses continue to double at each step, also, the number of bacte
 \end{algorithmic}
 \end{algorithm}
 
+\subsection*{Results}
+
+This are the results obtained by implementing and running over a sample test, our algorithm design.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .6]{output}
+\end{center}
+\caption{Output}
+\end{figure}
+
+In this graphic we compare the number of virus and the number of bacteria at each step.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .4]{Virus}
+\end{center}
+\caption{Evolution of Viruses vs. Bacteria}
+\end{figure}
+
 \section*{Problem 1-5}
 
 \begin{figure}[H]
@@ -183,6 +204,10 @@ The number of viruses continue to double at each step, also, the number of bacte
 \end{center}
 \caption{DNA Sequence}
 \end{figure}
+
+\subsection*{How does the running time depend on $n$?}
+
+The running time of my algorithm related to the number of bacteria $n$ is $n-1$, which is the number of steps it will take the number of viruses to reach, and terminate the number of bacteria in the Petri dish.
 
 \subsection*{5.A}
 The highest total score is $3599$ with a max score of $435$.
@@ -197,5 +222,7 @@ The query coverage of this result is: $99\%$
 The DNA sequence in Jurassic Park is \textbf{fictional}, because the tool we used couldn't find a match without gaps in the database. The lowest fraction of gaps found was $12\%$, that's why the maximum Ident value is $88\%$.
 
 \section*{Problem 1-6 Rosalind}
+
+This problem was solved on \textbf{Rosalind}.
 
 \end{document}

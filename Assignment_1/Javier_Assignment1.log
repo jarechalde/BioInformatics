@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  11 FEB 2018 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  11 FEB 2018 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,124 +689,147 @@ l.92
 line.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.107 \State
-             We have two indexes lists $l = (0,0,...0)$ and $n = (n_1,n_2,.....
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
-has been already used, duplicate ignored
+l.109 \For
+          {$i$ in range $0 \to n_1$}pdfTeX warning (ext4): destination with the
+ same identifier (name{ALG@line.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \State
-             We will print all the possible combination of elementspdfTeX warni
-ng (ext4): destination with the same identifier (name{ALG@line.3}) has been alr
-eady used, duplicate ignored
+l.110  \For
+           {$j$ in range $0 \to n_2$}pdfTeX warning (ext4): destination with th
+e same identifier (name{ALG@line.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \ForEach
-              {$(i_1,i_2,..,i_d)$ \textbf{from} $(0,0,...,0)$ \textbf{to} $(...
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.4}) 
-has been already used, duplicate ignored
+l.111   \State
+               ...pdfTeX warning (ext4): destination with the same identifier (
+name{ALG@line.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110   \State
-               Return list $i$.pdfTeX warning (ext4): destination with the same
- identifier (name{ALG@line.5}) has been already used, duplicate ignored
+l.112   \For
+            {$k$ in range $0 \to n_d$}pdfTeX warning (ext4): destination with t
+he same identifier (name{ALG@line.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.111 \EndFor
+l.113    \State
+                Print the resultspdfTeX warning (ext4): destination with the sa
+me identifier (name{ALG@line.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114   \EndFor
+               pdfTeX warning (ext4): destination with the same identifier (nam
+e{ALG@line.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115   \State
+               ...pdfTeX warning (ext4): destination with the same identifier (
+name{ALG@line.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116  \EndFor
+              pdfTeX warning (ext4): destination with the same identifier (name
+{ALG@line.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.117 \EndFor
               [2pdfTeX warning (ext4): destination with the same identifier (na
 me{ALG@line.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       pdfTeX warning (ext4): destination with the same identifier (name{ALG@lin
 e.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.114 
+l.120 
       ]pdfTeX warning (ext4): destination with the same identifier (name{ALG@li
 ne.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \State
-             We have two indexes lists $l = (0,0,...0)$ and $n = (n_1,n_2,.....
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2}) 
+l.126 \State
+             In this problem, the array position will be given by $i$pdfTeX war
+ning (ext4): destination with the same identifier (name{ALG@line.2}) has been a
+lready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.127 \Function
+               {Recursive}{i}pdfTeX warning (ext4): destination with the same i
+dentifier (name{ALG@line.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.128  \If
+          {We still didn't reach position $d$}pdfTeX warning (ext4): destinatio
+n with the same identifier (name{ALG@line.4}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.130  \EndIf
+             
+! Undefined control sequence.
+<recently read> \ElseIf 
+                        
+l.131  \ElseIf
+              {We reached position $d$}
+? 
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.5}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 \State
-             We will recursively build a tree to print all the possible comb...
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.122 \Function
-               {Combinations}{n,lev,index}pdfTeX warning (ext4): destination wi
-th the same identifier (name{ALG@line.4}) has been already used, duplicate igno
-red
-<to be read again> 
-                   \relax 
-l.123 \While
-            {lev<d}pdfTeX warning (ext4): destination with the same identifier 
-(name{ALG@line.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.124  \State
-              Add n_index to list $list$
+l.132   \For
+            {i in range 0 to n_d}
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.124  \State Add n_
-                    index to list $list$
+l.132   \For{i in range 0 to n_d}
+                                 
 ? 
 
 ! LaTeX Error: Command \item invalid in math mode.
@@ -815,8 +838,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125  \If
-          {level=0}
+l.133    \State
+                Print all the possible numbers in that range
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -825,8 +848,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125  \If
-          {level=0}
+l.133    \State
+                Print all the possible numbers in that range
 ? 
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -835,15 +858,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125  \If
-          {level=0}
+l.133    \State
+                Print all the possible numbers in that range
 ? 
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.6}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125  \If
-          {level=0}
+l.133    \State
+                Print all the possible numbers in that range
 
 ! LaTeX Error: Command \item invalid in math mode.
 
@@ -851,104 +874,72 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126   \State
-               Return array of 0's
+l.134   \EndFor
+               
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.126   \State
-               Return array of 0's
+l.134   \EndFor
+               
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.126   \State
-               Return array of 0's
+l.134   \EndFor
+               
 ? 
+
+Overfull \hbox (16.50102pt too wide) in paragraph at lines 132--134
+[] \OT1/cmr/bx/n/10 for \OT1/cmr/m/n/10 i in range 0 to n$[] [] \OML/cmm/m/it/1
+0 Printallthepossiblenumbersinthatrange[][]$ 
+ []
+
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.126   \State
-               Return array of 0's
+l.134   \EndFor
+               
 ? 
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.7}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126   \State
-               Return array of 0'spdfTeX warning (ext4): destination with the s
-ame identifier (name{ALG@line.8}) has been already used, duplicate ignored
+l.134   \EndFor
+               pdfTeX warning (ext4): destination with the same identifier (nam
+e{ALG@line.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.127  \EndIf
-             
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@b@2@EndIf@0 
-l.127  \EndIf
-             
-? 
+l.135   \State
+               Return one level higher, and increase the array in that position
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.9}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128  \If
-          {index = d}pdfTeX warning (ext4): destination with the same identifie
-r (name{ALG@line.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.129   \State
-               Reset indexpdfTeX warning (ext4): destination with the same iden
-tifier (name{ALG@line.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.130  \EndIf
-             pdfTeX warning (ext4): destination with the same identifier (name{
-ALG@line.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.131  \If
-          {We reach the lenght of l and used all d}pdfTeX warning (ext4): desti
-nation with the same identifier (name{ALG@line.13}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \relax 
-l.132   \State
-               Go down one level and reset indexpdfTeX warning (ext4): destinat
-ion with the same identifier (name{ALG@line.14}) has been already used, duplica
-te ignored
-<to be read again> 
-                   \relax 
-l.133  \EndIf
-             pdfTeX warning (ext4): destination with the same identifier (name{
-ALG@line.15}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.134 \For
-          {$n_i$ in $n$}pdfTeX warning (ext4): destination with the same identi
-fier (name{ALG@line.16}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.135 \State
-             Return ()pdfTeX warning (ext4): destination with the same identifi
-er (name{ALG@line.17}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.137 \EndFunction
-                  
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@b@2@EndFunction@0 
-l.137 \EndFunction
-                  
-? 
-pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.18})
+l.136   \State
+               If we reached the limit in that position go up in the array u...
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.10})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \State
-             Return the $sum$ value
+l.137   \State
+               a position to increase. If we cant increase any, that means w...
+pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.11})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138  \EndIf
+             
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@b@2@EndIf@0 
+l.138  \EndIf
+             
+? 
+! Undefined control sequence.
+l.139 \EndFucntion
+                  
+? 
 
 ! Package algorithmicx Error: Some blocks are not closed!!!.
 
@@ -956,46 +947,46 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \end{algorithmic}
+l.140 \end{algorithmic}
                        
 ? 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
  [3]
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.168 \State
+l.169 \State
              At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteria
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.168 \State
+l.169 \State
              At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteria
 ? 
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 \State
+l.169 \State
              At the beginning we have $n_v = 1$ virus and $n_b = n$ bacteria
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.169 \State
+l.170 \State
              At each step, the number of viruses double, the bacteria double...
 
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.169 \State
+l.170 \State
              At each step, the number of viruses double, the bacteria double...
 
 ? 
@@ -1003,104 +994,119 @@ pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.2})
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169 \State
+l.170 \State
              At each step, the number of viruses double, the bacteria double...
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.170 \While
+l.171 \While
              {$n_b>n_v$}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.170 \While
+l.171 \While
              {$n_b>n_v$}
 ? 
 pdfTeX warning (ext4): destination with the same identifier (name{ALG@line.3}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 \While
+l.171 \While
              {$n_b>n_v$}pdfTeX warning (ext4): destination with the same identi
 fier (name{ALG@line.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171  \State
+l.172  \State
               $n_b = 2*(n_b-n_v)$pdfTeX warning (ext4): destination with the sa
 me identifier (name{ALG@line.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172  \State
+l.173  \State
               $n_v = 2*n_v$pdfTeX warning (ext4): destination with the same ide
 ntifier (name{ALG@line.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.173  \State
+l.174  \State
               $steps++$pdfTeX warning (ext4): destination with the same identif
 ier (name{ALG@line.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.174 \EndWhile
+l.175 \EndWhile
                
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.175 \end{algorithmic}
+l.176 \end{algorithmic}
                        
 ? 
 ! Missing = inserted for \ifnum.
 <to be read again> 
                    \ALG@currentblock@0 
-l.175 \end{algorithmic}
+l.176 \end{algorithmic}
                        
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.175 \end{algorithmic}
+l.176 \end{algorithmic}
                        
 ? 
-<Dinosaur.png, id=60, 671.50874pt x 703.62875pt>
+<output.png, id=60, 724.7075pt x 52.195pt>
+File: output.png Graphic file (type png)
+ <use output.png>
+Package pdftex.def Info: output.png used on input line 185.
+(pdftex.def)             Requested size: 434.82785pt x 31.31723pt.
+
+Overfull \hbox (89.82785pt too wide) in paragraph at lines 185--186
+ [] 
+ []
+
+[4 <./output.png>] <Virus.jpeg, id=71, 803.0pt x 602.25pt>
+File: Virus.jpeg Graphic file (type jpg)
+ <use Virus.jpeg>
+Package pdftex.def Info: Virus.jpeg used on input line 194.
+(pdftex.def)             Requested size: 321.1943pt x 240.89572pt.
+
+<Dinosaur.png, id=72, 671.50874pt x 703.62875pt>
 File: Dinosaur.png Graphic file (type png)
  <use Dinosaur.png>
-Package pdftex.def Info: Dinosaur.png used on input line 182.
+Package pdftex.def Info: Dinosaur.png used on input line 203.
 (pdftex.def)             Requested size: 268.59874pt x 281.4465pt.
- [4]
-[5 <./Dinosaur.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+ [5 <./Virus.jpeg>] [6 <./Dinosaur.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (./Javier_Assignment1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `Javier_Assignment1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18002 strings out of 493029
- 321477 string characters out of 6136235
+ 18032 strings out of 493029
+ 321772 string characters out of 6136235
  413067 words of memory out of 5000000
- 21351 multiletter control sequences out of 15000+600000
- 8126 words of font info for 29 fonts, out of 8000000 for 9000
+ 21365 multiletter control sequences out of 15000+600000
+ 10939 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,42p,10440b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,42p,10440b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
-fb>
-Output written on Javier_Assignment1.pdf (7 pages, 163376 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Javier_Assignment1.pdf (8 pages, 244881 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
