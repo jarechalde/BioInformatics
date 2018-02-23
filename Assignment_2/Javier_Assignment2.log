@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  22 FEB 2018 21:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.1)  23 FEB 2018 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,46 +730,46 @@ File: OutputProblem22.txt  (verbatim)
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 \Function
+l.131 \Function
                {FindPattern}{T,s,m,n}pdfTeX warning (ext4): destination with th
 e same identifier (name{ALG@line.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114  \While
+l.132  \While
              {$i<(m-n)$}pdfTeX warning (ext4): destination with the same identi
 fier (name{ALG@line.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.115   \If
+l.133   \If
            {$s[i]==T[i]$}pdfTeX warning (ext4): destination with the same ident
 ifier (name{ALG@line.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116     \For
+l.134     \For
               {$j$ in range $i\to (i+n)$}pdfTeX warning (ext4): destination wit
 h the same identifier (name{ALG@line.5}) has been already used, duplicate ignor
 ed
 <to be read again> 
                    \relax 
-l.117      \If
+l.135      \If
               {$s[j] == T[j]$}pdfTeX warning (ext4): destination with the same 
 identifier (name{ALG@line.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118       \If
-               {$j!=(i+n)$} [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+l.136       \If
+               {$j!=(i+n)$} [5] [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
  (./Javier_Assignment2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `Javier_Assignment2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18369 strings out of 493029
- 326237 string characters out of 6136235
+ 18370 strings out of 493029
+ 326243 string characters out of 6136235
  431698 words of memory out of 5000000
  21588 multiletter control sequences out of 15000+600000
  10488 words of font info for 38 fonts, out of 8000000 for 9000
@@ -780,16 +780,17 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb>
-Output written on Javier_Assignment2.pdf (7 pages, 161616 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Javier_Assignment2.pdf (8 pages, 178234 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
+ 155 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

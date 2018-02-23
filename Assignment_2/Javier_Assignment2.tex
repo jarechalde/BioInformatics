@@ -91,7 +91,25 @@ $$U\ominus V = \{ u-v:u\in U,v\in V \}$$
 
 are homometric.
 
-In this problem we have two sets
+In this problem we have two sets:
+
+$$U = \{u_1,u_2,...,u_n\}$$
+$$V = \{v_1,v_2,...,v_n\}$$
+
+Then,
+
+$$A = U\oplus V = \{ u_1+v_1,u_1+v_2,...,u_1+v_n,...,u_n+v_1,u_n+v_2,...u_n+v_n\}$$
+
+$$B = U\ominus V = \{ u_1-v_1,u_1-v_2,...u_1-v_n,...,u_n-v_1,u_n-v_2,...u_n-v_n\}$$
+
+Now we calculate $\Delta A$ and $\Delta B$:
+
+$$\Delta A = \{ u_1+v_1 - (u_1+v_2),...\} = \{v_1-v_2,...\}$$
+$$\Delta B = \{ u_1-v_1 - (u_1-v_2),...\} = \{v_2-v_1,...\}$$
+
+As we can see, the elements from $U$ disappear when we are calculating $\Delta A$ and $\Delta B$, and then, we are only calculating the distances within the set $U$. And as the distance is an absolute value of the difference of the two points, $v_1-v_2 = v_2 - v_1$, and this is true for each one of the elements int $\Delta A$ and $\Delta B$. 
+
+Then, we proven that $\Delta A = \Delta B$ and thus, sets $U\oplus V$ and $U \ominus V$ are \textit{homometric}.
 
 \section*{Problem 2-4 Jones \& Pevzner, Problem 4.9}
 
