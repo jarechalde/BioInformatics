@@ -35,13 +35,45 @@
 
 \section*{Problem 2-1 Jones \& Pevzner, Problem 4.1}
 
+In this problem, we will be given a set $X$, and we will need to calculate the multiset $\Delta X$,
+
 \subsection*{Pseudocode}
+
+In our implementation, we will iterate over the list with two index, the first one to indicate the position we are calculating the distances from, and the second one to indicate the position we want to calculate the distance with. We suppose that the given list comes presorted, so we won't.
+
+\begin{algorithm}[H]
+\caption{title}
+\begin{algorithmic}
+\For{$i$ in range $1\to length(X)$}
+ \For{$j$ in range $j\to length(X)$}
+  \State $distance = X[j]-X[i]$
+  \State We add the calculated distance to the $\Delta X$ array
+ \EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
 
 \subsection*{Implementation}
 
+Here is the implementation of the pseudocode listed above.
+
+\lstinputlisting[language=Python]{Problem21.py}
+
+After running the code over a sample dataset, we obtained the following results.
+
+\verbatiminput{OutputProblem21.txt}
+
 \section*{Problem 2-2 Jones \& Pevzner, Problem 4.2}
 
-\subsection*{Following $PARTIALDIGEST(L)$}
+\subsection*{Following $ANOTHERBRUTEFORCEPDP(L,n)$}
+
+Here is the implementation code for $ANOTHERBRUTEFORCEPDP$, note that for finding all the possible sets of length $n-2$, we decided to use \textit{itertools}, to make the implementation easier.
+
+\lstinputlisting[language=Python]{Problem21.py}
+
+After running the code over the given partial digest, we obtained the following results.
+
+\verbatiminput{OutputProblem22.txt}
 
 \section*{Problem 2-3 Jones \& Pevzner, Problem 4.5}
 
