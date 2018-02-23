@@ -38,7 +38,8 @@ def anotherbruteforcepdp(L):
  #Valid X
  Xret = []
 
- #Now we will build all the different possible sets, using the itertools package
+ #Now we will build all the different possible sets, 
+ #using the itertools package
  for p in permutations(UL, 5):
   valid = 1
 
