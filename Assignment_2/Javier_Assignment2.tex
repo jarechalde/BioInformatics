@@ -79,6 +79,20 @@ After running the code over the given partial digest, we obtained the following 
 
 \section*{Problem 2-3 Jones \& Pevzner, Problem 4.5}
 
+Two sets $A$ and $B$ are said to be homometric if $\Delta A = \Delta B$.
+
+We will try to prove that
+
+$$U\oplus V = \{ u+v:u\in U,v\in V \}$$
+
+and
+
+$$U\ominus V = \{ u-v:u\in U,v\in V \}$$
+
+are homometric.
+
+In this problem we have two sets
+
 \section*{Problem 2-4 Jones \& Pevzner, Problem 4.9}
 
 \subsection*{Pseudocode}
@@ -87,9 +101,46 @@ After running the code over the given partial digest, we obtained the following 
 
 \section*{Problem 2-5 Jones \& Pevzner, Problem 4.12}
 
+In this problem, we have a long text string $T$, and a shorter pattern string $s$, we are trying to find the first occurence of $s$ in $T$, if there is any.
+
+We suppose that the length of $T$ is $m$, and the length of $s$ is $n$.
+
 \subsection*{Pseudocode}
 
+\begin{algorithm}[H]
+\caption{Pseudocode for finding pattern}
+\begin{algorithmic}
+\Function{FindPattern}{T,s,m,n}
+ \While{$i<(m-n)$}
+  \If{$s[i]==T[i]$}
+    \For{$j$ in range $i\to (i+n)$}
+     \If{$s[j] == T[j]$}
+      \If{$j!=(i+n)$}
+       \State $j++$
+      \EndIf
+      \If{$j==(i+n)$}
+       \State Return $s[i:(i+n)]$
+      \EndIf
+     \EndIf
+     \If{$s[j]!=T[j]$}
+      \State $i = j$
+      \State Exit for loop
+     \EndIf
+    \EndFor
+  \EndIf
+  \If{$s[i]!=T[i]$}
+   \State $i++$
+  \EndIf
+ \EndWhile
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
 \subsection*{Time Complexity}
+
+In our implementation, we will iterate over the long string with our pattern. If we find that the first letter of our pattern is equal to the position we are checking in the longer text string, we will continue to check the following positions of our pattern to see if they match the ones on the long string. 
+
+Then in worst case scenario, we will have to check if the pattern is in the long string, on every position possible of the long string, without success. Then the time complexity of our algorithm will be $O((m-n)*n)$.
 
 \section*{Problem 2-6 Jones \& Pevzner, Problem 4.16}
 
