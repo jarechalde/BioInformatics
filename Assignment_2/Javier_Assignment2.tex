@@ -162,16 +162,9 @@ Then in worst case scenario, we will have to check if the pattern is in the long
 
 \section*{Problem 2-6 Jones \& Pevzner, Problem 4.16}
 
-\begin{algorithm}[H]
-\caption{$YETANOTHERMOTIFSEARCH$ pseudocode}
-\begin{algorithmic}[1]
-\Function{Yetanothermotifsearch}{DNA,t,n,l}
-\State $s \gets (1,1,\dots,1)$
-\State \textbf{bestmotif} \gets \Call{Finds}{s,1,t,n,l}
-\State \Return \textbf{bestmotif}
-\EndFunction
-\end{algorithmic}
-\end{algorithm}
+The $YETANOTHERMOTIFSEARCH$ algorithm is similar to $BRANCHANDBOUNDMOTIFSEARCH$, as the algorithm, tries to find the best score by trying only the motifs that may give us a better score than the current best score.
+
+The main difference between the two algorithms, is that for building all the possible motifs, $YETANOTHERMOTIFSEARCH$ uses recursive calls to the $FIND$ function, while $BRANCHANDBOUNDMOTIFSEARCH$, models the problem as a tree, and uses branch and bound for the same purpose.
 
 \section*{Problem 2-7 Rosalind}
 
