@@ -115,19 +115,36 @@ Then, we proven that $\Delta A = \Delta B$ and thus, sets $U\oplus V$ and $U \om
 
 \subsection*{Pseudocode}
 
+In this problem we are given three sets of fragment lengths $A$, $B$ and $A+B$. The goal is to reconstruct the original restriction map for each one of the enzymes, $A$ and $B$.
+
+For our brute force implementation, we will use all the possible orderings of the different fragments from $A$, $B$, and $A+B$ and see if they "match".
+
 \begin{algorithm}[H]
 \caption{DDP Brute Force}
 \begin{algorithmic}[1]
+\For{Every possible ordering of $A+B$}
+ \For{Every possible ordering of $A$}
+  \For{Every possible ordering of $B$}
+   \For{fragment $dX(i)$ in $dX$}
+    \If{$dX(i) == A[j]$}
+     \State Append to the A position $A[j] = sum(dX[0:i])$
+     \State j++
+    \ElsIf{$dx{i} == B[k]$}
+     \State Append to the A position $B[k] = sum(dX[0:i])$
+     \State k++
+    \Else{It doesnt fit any of the fragments}
+     \State Continue to the next iteration
+    \EndIf
+   \EndFor
+  \EndFor
+ \EndFor
+\EndFor
 \end{algorithmic}
 \end{algorithm}
 
 \subsection*{Branch and Bound}
 
-\begin{algorithm}[H]
-\caption{DDP Branch and Bound}
-\begin{algorithmic}[1]
-\end{algorithmic}
-\end{algorithm}
+A \textit{Branch and Bound} implementation for this algorithm could list all the possible combinations of $A+B$ as a tree, having as the root nodes only the nodes that are equal or smaller to the first fragments of $A$ and $B$. While we explored the tree, we could check if the sequence that we are building matches the other fragment lengths in $A$ and $B$, and if it doesnt, we could skip that branch, and go to the next one.
 
 \section*{Problem 2-5 Jones \& Pevzner, Problem 4.12}
 
