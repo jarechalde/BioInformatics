@@ -37,7 +37,75 @@
 
 \section*{Problem 3-1 Jones \& Pevzner, Problem 5.1}
 
+\subsection*{Correct answer $OPT = OPT(\pi)$?}
+
+$A(\pi) \geq OPT(\pi)/App_{ratio}$
+$12 \geq OPT(\pi)/\frac{1}{4}$
+$OPT(\pi) \leq 3$
+
+\subsection*{What if A was a minimization algorithm?}
+
+$App_{ratio} \geq A(\pi)/OPT(\pi)$
+$\frac{1}{4} \geq 12/OPT(\pi)$
+$OPT(\pi) \geq 48$
+
 \section*{Problem 3-2 Jones \& Pevzner, Problem 5.4}
+
+\subsection*{1.}
+
+We are going to perform \textit{ImprovedBreakpointReversalSort} on $\pi = 3 4 6 5 8 1 7 2$.
+
+We start by adding 0 and 9 to the sequence.
+
+$$0 3 4 6 5 8 1 7 2 9 b(\pi) = 7$$
+
+$$0 3 4 \textbf{6 5} 8 1 7 2 9$$
+$$0 3 4 5 6 8 1 7 2 9 b(\pi) = 6$$
+
+$$0 3 4 5 6 \textbf{8 1 7} 2 9$$
+$$0 3 4 5 6 7 1 8 2 9 b(\pi) = 5$$
+
+$$0 3 4 5 6 7 1 \textbf{8 2} 9$$
+$$0 3 4 5 6 7 1 2 8 9 b(\pi) = 3$$
+
+As there are not any decreasing strips, we flip an increasing one.
+
+$$0 3 4 5 6 7 \textbf{1 2} 8 9$$
+$$0 3 4 5 6 7 2 1 8 9 b(\pi) = 3$$
+
+$$0 \textbf{3 4 5 6 7 2 1} 8 9$$
+$$0 1 2 7 6 5 4 3 8 9 b(\pi) = 2$$
+
+Finally,
+
+$$0 1 2 \textbf{7 6 5 4 3} 8 9$$
+$$0 1 2 3 4 5 6 7 8 9 b(\pi) = 0$$
+
+\subsection*{2.}
+
+The permutation that used the if test was this one:
+
+$$0 3 4 5 6 7 1 2 8 9$$
+$$0 3 4 5 6 7 \textbf{1 2} 8 9$$
+$$0 3 4 5 6 7 2 1 8 9$$
+
+\subsection*{3.}
+
+The sequence shown below uses 4 reversals instead of the 4 reversals used by \textit{ImprovedBreakpointReversalSort}.
+
+$$0 3 4 5 6 8 1 7 2 9$$
+$$0 3 4 5 6 \textbf{8 1 7 2} 9$$
+
+$$0 3 4 5 6 2 7 1 8 9$$
+$$0 \textbf{3 4 5 6} 2 7 1 8 9$$
+
+$$0 6 5 4 3 2 7 1 8 9$$
+$$0 6 5 4 3 2 \textbf{7 1} 8 9$$
+
+$$0 6 5 4 3 2 1 7 8 9$$
+$$0 \textbf{6 5 4 3 2 1} 7 8 9$$
+
+$$0 1 2 3 4 5 6 7 8 9$$
 
 \section*{Problem 3-3 Jones \& Pevzner, Problem 5.5}
 
