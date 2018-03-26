@@ -109,9 +109,54 @@ $$0 1 2 3 4 5 6 7 8 9$$
 
 \section*{Problem 3-3 Jones \& Pevzner, Problem 5.5}
 
+$$0 1 4 5 2 3 6 b(\pi) = 3$$
+
+We choose the following permutation:
+
+$$0 1 4 \textbf{5 2 3} 6$$
+$$0 1 4 3 2 5 6 b(\pi) = 2$$
+
+Finally,
+
+$$0 1 \textbf{4 3 2} 5 6$$
+$$0 1 2 3 4 5 6$$
+
+
 \section*{Problem 3-4 Jones \& Pevzner, Problem 5.13}
 
+\subsection*{$\pi_1$ and $\pi_2$}
+
+There are 3 breakpoints between $\pi_1$ and $\pi_2$: 12, 24, 35.
+
+\subsection*{$\pi_1$ and $\pi_3$}
+
+There are 2 breakpoints between $\pi_1$ and $\pi_3$: 24, 35.
+
+\subsection*{$\pi_2$ and $\pi_3$}
+
+There are 2 breakpoints between $\pi_2$ and $\pi_3$: 14, 25.
+
 \section*{Problem 3-5 Jones \& Pevzner, Problem 6.4}
+
+\begin{algorithm}[H]
+\caption{Implementation}
+\begin{algorithmic}[1]
+\function{DPCHANGE}{M,c,d}
+ \State $bestNumCoins_0 \leftarrow 0$
+ \For{$m \leftarrow 1  to M$}
+ \State $bestNumCoins_M \leftarrrow \infty$
+  \For{$i \leftarrow 1 to d$}
+   \If{$m \geq c_i$}
+    \If{$bestNumCoins_{m-c_i} + 1 < bestNumCoins_m$}
+     \State $bestNumCoins_m \leftarrow bestNumCoins_{m-c_i} + 1$
+    \EndIf
+   \EndIf
+  \EndFor
+ \EndFor
+ \State \Return $bestNumCoins_M$
+\EndFucntion
+\end{algorithmic}
+\end{algorithm}
 
 \section*{Problem 3-6 Rosalind}
 
