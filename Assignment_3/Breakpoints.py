@@ -1,6 +1,10 @@
-nlist = [3,4,5,12,-8,-7,-6,1,2,10,9,-11,+13,+14]
+nlist = [3,4,5,-12,-8,-7,-6,1,2,10,9,-11,13,14]
 
-newlist = list.append(max(nlist)+1)
+#Append 0 and n+1 to the list
+nlist.insert(0,0)
+nlist.append(max(map(abs,nlist))+1)
+
+print(nlist)
 
 def countbreakpoints(list):
  #Initialize the number of breakpoints to 0
