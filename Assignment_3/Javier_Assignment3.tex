@@ -172,12 +172,14 @@ There are 2 breakpoints between $\pi_2$ and $\pi_3$: 14, 25.
 \begin{algorithmic}[1]
 \Function{DPCHANGE}{M,c,d}
  \State $bestNumCoins_0 \leftarrow 0$
+ \State $bestCoins_0 \leftarrow \{\}$
  \For{$m \leftarrow 1$  to $M$}
  \State $bestNumCoins_M \leftarrow \infty$
   \For{$i \leftarrow 1$ to $d$}
    \If{$m \geq c_i$}
     \If{$bestNumCoins_{m-c_i} + 1 < bestNumCoins_m$}
      \State $bestNumCoins_m \leftarrow bestNumCoins_{m-c_i} + 1$
+     \State $bestCoins_m = \{bestCoins_{m-c_i},c_i\}$
     \EndIf
    \EndIf
   \EndFor
