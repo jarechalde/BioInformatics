@@ -1,8 +1,8 @@
 #Number we want to get change for
-change = 40
+change = 16784
 
 #Coins we have available to give the change back
-coins = [1,5,10,20,25,50]
+coins = [1,3,5,13,15,17,19]
 
 
 def mincoins(change,coins):

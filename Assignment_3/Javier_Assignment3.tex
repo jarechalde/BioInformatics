@@ -37,90 +37,119 @@
 
 \section*{Problem 3-1 Jones \& Pevzner, Problem 5.1}
 
-\subsection*{Correct answer $OPT = OPT(\pi)$?}
+\subsection*{Correct answer:}
 
-$A(\pi) \geq OPT(\pi)/App_{ratio}$
-$12 \geq OPT(\pi)/\frac{1}{4}$
-$OPT(\pi) \leq 3$
+$$A(\pi) \geq OPT(\pi)/App_{ratio}$$
+$$12 \geq OPT(\pi)/\frac{1}{4}$$
+$$OPT(\pi) \leq 3$$
 
 \subsection*{What if A was a minimization algorithm?}
 
-$App_{ratio} \geq A(\pi)/OPT(\pi)$
-$\frac{1}{4} \geq 12/OPT(\pi)$
-$OPT(\pi) \geq 48$
+$$App_{ratio} \geq A(\pi)/OPT(\pi)$$
+$$\frac{1}{4} \geq 12/OPT(\pi)$$
+$$OPT(\pi) \geq 48$$
 
 \section*{Problem 3-2 Jones \& Pevzner, Problem 5.4}
 
 \subsection*{1.}
 
-We are going to perform \textit{ImprovedBreakpointReversalSort} on $\pi = 3 4 6 5 8 1 7 2$.
+We are going to perform \textit{ImprovedBreakpointReversalSort} on $\pi$ = 3 4 6 5 8 1 7 2.
 
 We start by adding 0 and 9 to the sequence.
 
-$$0 3 4 6 5 8 1 7 2 9 b(\pi) = 7$$
+\begin{center}
+0 3 4 6 5 8 1 7 2 9 $b(\pi) = 7$
 
-$$0 3 4 \textbf{6 5} 8 1 7 2 9$$
-$$0 3 4 5 6 8 1 7 2 9 b(\pi) = 6$$
+0 3 4 \textbf{6 5} 8 1 7 2 9
 
-$$0 3 4 5 6 \textbf{8 1 7} 2 9$$
-$$0 3 4 5 6 7 1 8 2 9 b(\pi) = 5$$
+0 3 4 5 6 8 1 7 2 9 $b(\pi) = 6$
 
-$$0 3 4 5 6 7 1 \textbf{8 2} 9$$
-$$0 3 4 5 6 7 1 2 8 9 b(\pi) = 3$$
+0 3 4 5 6 \textbf{8 1 7} 2 9
+
+0 3 4 5 6 7 1 8 2 9 $b(\pi) = 5$
+
+0 3 4 5 6 7 1 \textbf{8 2} 9
+
+0 3 4 5 6 7 1 2 8 9 $b(\pi) = 3$
+\end{center}
 
 As there are not any decreasing strips, we flip an increasing one.
 
-$$0 3 4 5 6 7 \textbf{1 2} 8 9$$
-$$0 3 4 5 6 7 2 1 8 9 b(\pi) = 3$$
+\begin{center}
+0 3 4 5 6 7 \textbf{1 2} 8 9
 
-$$0 \textbf{3 4 5 6 7 2 1} 8 9$$
-$$0 1 2 7 6 5 4 3 8 9 b(\pi) = 2$$
+0 3 4 5 6 7 2 1 8 9 $b(\pi) = 3$
+
+0 \textbf{3 4 5 6 7 2 1} 8 9
+
+0 1 2 7 6 5 4 3 8 9 $b(\pi) = 2$
+\end{center}
 
 Finally,
 
-$$0 1 2 \textbf{7 6 5 4 3} 8 9$$
-$$0 1 2 3 4 5 6 7 8 9 b(\pi) = 0$$
+\begin{center}
+0 1 2 \textbf{7 6 5 4 3} 8 9
+
+0 1 2 3 4 5 6 7 8 9 $b(\pi) = 0$
+\end{center}
 
 \subsection*{2.}
 
 The permutation that used the if test was this one:
 
-$$0 3 4 5 6 7 1 2 8 9$$
-$$0 3 4 5 6 7 \textbf{1 2} 8 9$$
-$$0 3 4 5 6 7 2 1 8 9$$
+\begin{center}
+0 3 4 5 6 7 1 2 8 9
+
+0 3 4 5 6 7 \textbf{1 2} 8 9
+
+0 3 4 5 6 7 2 1 8 9
+\end{center}
 
 \subsection*{3.}
 
-The sequence shown below uses 4 reversals instead of the 4 reversals used by \textit{ImprovedBreakpointReversalSort}.
+The sequence shown below uses 4 reversals instead of the 5 reversals used by \textit{ImprovedBreakpointReversalSort}.
 
-$$0 3 4 5 6 8 1 7 2 9$$
-$$0 3 4 5 6 \textbf{8 1 7 2} 9$$
+\begin{center}
+0 3 4 5 6 8 1 7 2 9
 
-$$0 3 4 5 6 2 7 1 8 9$$
-$$0 \textbf{3 4 5 6} 2 7 1 8 9$$
+0 3 4 5 6 \textbf{8 1 7 2} 9
 
-$$0 6 5 4 3 2 7 1 8 9$$
-$$0 6 5 4 3 2 \textbf{7 1} 8 9$$
+0 3 4 5 6 2 7 1 8 9
 
-$$0 6 5 4 3 2 1 7 8 9$$
-$$0 \textbf{6 5 4 3 2 1} 7 8 9$$
+0 \textbf{3 4 5 6} 2 7 1 8 9
 
-$$0 1 2 3 4 5 6 7 8 9$$
+0 6 5 4 3 2 7 1 8 9
+
+0 6 5 4 3 2 \textbf{7 1} 8 9
+
+0 6 5 4 3 2 1 7 8 9
+
+0 \textbf{6 5 4 3 2 1} 7 8 9
+
+0 1 2 3 4 5 6 7 8 9
+\end{center}
 
 \section*{Problem 3-3 Jones \& Pevzner, Problem 5.5}
 
-$$0 1 4 5 2 3 6 b(\pi) = 3$$
+\begin{center}
+0 1 4 5 2 3 6 $b(\pi) = 3$
+\end{center}
 
 We choose the following permutation:
 
-$$0 1 4 \textbf{5 2 3} 6$$
-$$0 1 4 3 2 5 6 b(\pi) = 2$$
+\begin{center}
+0 1 4 \textbf{5 2 3} 6
+
+0 1 4 3 2 5 6 $b(\pi) = 2$
+\end{center}
 
 Finally,
 
-$$0 1 \textbf{4 3 2} 5 6$$
-$$0 1 2 3 4 5 6$$
+\begin{center}
+0 1 \textbf{4 3 2} 5 6
 
+0 1 2 3 4 5 6 $b(\pi) = 0$
+\end{center}
 
 \section*{Problem 3-4 Jones \& Pevzner, Problem 5.13}
 
@@ -141,11 +170,11 @@ There are 2 breakpoints between $\pi_2$ and $\pi_3$: 14, 25.
 \begin{algorithm}[H]
 \caption{Implementation}
 \begin{algorithmic}[1]
-\function{DPCHANGE}{M,c,d}
+\Function{DPCHANGE}{M,c,d}
  \State $bestNumCoins_0 \leftarrow 0$
- \For{$m \leftarrow 1  to M$}
- \State $bestNumCoins_M \leftarrrow \infty$
-  \For{$i \leftarrow 1 to d$}
+ \For{$m \leftarrow 1$  to $M$}
+ \State $bestNumCoins_M \leftarrow \infty$
+  \For{$i \leftarrow 1$ to $d$}
    \If{$m \geq c_i$}
     \If{$bestNumCoins_{m-c_i} + 1 < bestNumCoins_m$}
      \State $bestNumCoins_m \leftarrow bestNumCoins_{m-c_i} + 1$
@@ -154,12 +183,26 @@ There are 2 breakpoints between $\pi_2$ and $\pi_3$: 14, 25.
   \EndFor
  \EndFor
  \State \Return $bestNumCoins_M$
-\EndFucntion
+\EndFunction
 \end{algorithmic}
 \end{algorithm}
 
 \section*{Problem 3-6 Rosalind}
 
+My \textit{Rosalind} username is \textbf{jarechalde}.
+
 \section*{Problem 3-7 Rosalind}
+
+\subsection*{afoster3}
+
+What I like about this solution is that is really compact, and in a few lines can implement the whole solution.
+
+\subsection*{dennison\_david}
+
+What I like about this solution is that rather than using a for loop and going letter by letter, it uses a pointer and a while loop instead, breaking this loop when no more matches are found.
+
+\subsection*{Schavan}
+
+What I like about this solution is that it has a really good format, and it is also commented.
 
 \end{document}
